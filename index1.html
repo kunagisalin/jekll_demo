@@ -1,20 +1,17 @@
----
-layout default
-title ÎÒµÄBlog
+﻿---
+layout: default
+title: ÎÒµÄBlog
 ---
 <h2>{{ page.title }}</h2>
 <p>×îÐÂÎÄÕÂ</p>
 <ul>
 {% for post in site.posts %}
-<<<<<<< HEAD
 <li>
 {{ post.date  date_to_string }} 
 <a href={{ site.baseurl }}{{ post.url }}>{{ post.title }}</a>
 </li>
 <div>fuck</div>
-=======
-<li>{{ post.date  date_to_string }} 
-<a href={{ site.baseurl }}{{ post.url }}>{{ post.title }}</a></li>
->>>>>>> origin/gh-pages
+<li>{{ post.date | date_to_string }} 
+<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
