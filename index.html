@@ -1,15 +1,20 @@
 ---
 layout default
-title 我的Blog
+title 脦脪碌脛Blog
 ---
 <h2>{{ page.title }}</h2>
-<p>最新文章</p>
+<p>脳卯脨脗脦脛脮脗</p>
 <ul>
 {% for post in site.posts %}
+<<<<<<< HEAD
 <li>
 {{ post.date  date_to_string }} 
 <a href={{ site.baseurl }}{{ post.url }}>{{ post.title }}</a>
 </li>
 <div>fuck</div>
+=======
+<li>{{ post.date  date_to_string }} 
+<a href={{ site.baseurl }}{{ post.url }}>{{ post.title }}</a></li>
+>>>>>>> origin/gh-pages
 {% endfor %}
 </ul>
