@@ -1,9 +1,9 @@
----
-layout default
-title kunagisaBlog
+ï»¿---
+layout: default
+title: ÃÃ’ÂµÃ„Blog
 ---
 <h2>{{ page.title }}</h2>
-<p>°¢Ë¹´ïËÄ´óËÄ´óËÄ´ó</p>
+<p>Ã—Ã®ÃÃ‚ÃÃ„Ã•Ã‚</p>
 <ul>
 {% for post in site.posts %}
 <li>
@@ -11,7 +11,7 @@ title kunagisaBlog
 <a href={{ site.baseurl }}{{ post.url }}>{{ post.title }}</a>
 </li>
 <div>fuck</div>
-<li>{{ post.date  date_to_string }} 
-<a href={{ site.baseurl }}{{ post.url }}>{{ post.title }}</a></li>
+<li>{{ post.date | date_to_string }} 
+<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
